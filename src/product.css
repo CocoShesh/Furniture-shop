@@ -28,4 +28,7 @@
   border-radius: 50%;
 }
 
+.ant-drawer-body {
+  margin-top: 2rem !important;
+}
 /* Optional: Add more styling as needed */

@@ -25,9 +25,9 @@ export default function App() {
 
   return (
     <>
-      <section className="flex justify-between w-full mx-20 mb-5 items-center max-sm:w-full max-sm:mx-auto max-sm:px-5">
+      <section className="flex justify-between w-full  mx-20 mb-5 items-center max-sm:w-full max-sm:mx-auto max-sm:px-5">
         <div>
-          <h1> Products we are proud of</h1>
+          <h1 className="text-2xl  text-gray-900"> Products we are proud of</h1>
         </div>
         <div className="flex w-[280px]  py-2 gap-2 max-sm:w-auto">
           <button
@@ -44,7 +44,7 @@ export default function App() {
           </button>
         </div>
       </section>
-      <div className="carousel-container rounded-box mx-20 max-sm:w-[700px] max-sm:mx-auto max-sm:px-5">
+      <div className="carousel-container rounded-box mx-20 max-sm:w-[700px] max-sm:mx-auto max-sm:px-5  text-gray-900">
         <Swiper
           ref={swiperRef}
           effect={"slide"}

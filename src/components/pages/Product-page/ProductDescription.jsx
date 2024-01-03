@@ -11,8 +11,8 @@ function ProductDescription() {
 
   return (
     <div>
-      <section className="flex justify-between mt-20 max-sm:flex-col max-sm:gap-5 max-sm:items-center">
-        <section className="w-[380px] h-[100px] bg-base-200 p-5">
+      <section className="flex justify-between mt-20 max-sm:flex-col max-sm:gap-5 max-sm:items-center  bg-white ">
+        <section className="w-[380px] h-[100px] bg-base-200 p-5 bg">
           <h1 className="text-2xl font-bold font-sans "> Texture:</h1>
           <p className="font-sans text-lg"> {product.Texture}</p>
         </section>

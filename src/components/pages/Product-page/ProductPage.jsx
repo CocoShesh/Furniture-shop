@@ -47,20 +47,37 @@ function Product_Page() {
     const price = parseFloat(product.price.replace("$", ""));
     const itemTotal = quantity * price;
     const itemToAdd = {
+      id: product.id, // Include the product ID if available
       name: product.name,
       price: itemTotal,
       src: product.imageSrc,
       alt: product.imageAlt,
+      // Include other details if needed (e.g., ID, description, etc.)
     };
-    addToCart([itemToAdd]); // Pass as an array
+
+    // Get the current cart items from localStorage
+    const currentCartItems =
+      JSON.parse(window.localStorage.getItem("cart")) || [];
+
+    // Add the new item to the existing items
+    const updatedCartItems = [...currentCartItems, itemToAdd];
+
+    // Update the cart in localStorage
+    window.localStorage.setItem("cart", JSON.stringify(updatedCartItems));
+
+    // Update the context state (addToCart function) to reflect the change
+    addToCart(itemToAdd);
   };
+
   return (
-    <div className=" mx-20 max-sm:mx-auto">
+    <div className=" px-20 max-sm:mx-auto bg-white">
       {contextHolder}
-      <h2 className="text-center text-5xl mb-10">{product.name}</h2>
+      <h2 className="text-center text-5xl mb-10  text-gray-900">
+        {product.name}
+      </h2>
       <div className=" border-2 ">
         <section className="flex max-sm:flex-col max-sm:w-full ">
-          <section className=" w-[500px]">
+          <section className=" w-[500px] ">
             <img src={product.imageSrc} alt={product.imageAlt} />
           </section>
           <section className="bg-base-200 w-auto h-auto p-10 rounded-md">
