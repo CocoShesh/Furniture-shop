@@ -14,7 +14,7 @@ const Categories = () => {
   });
 
   return (
-    <div className="mx-32 mb-20 pb-20 max-md:m-auto max-md:w-full max-lg:w-full max-lg:mx-auto max-lg:px-10">
+    <div className="mx-32 mb-20 pb-20 max-md:m-auto max-md:w-full max-lg:w-full max-lg:mx-auto max-lg:px-10 text-gray-900 ">
       <div className="flex w-full max-md:w-auto max-md:ml-5">
         <p className="text-xl font-bold cursor-pointer">
           <a href="/">

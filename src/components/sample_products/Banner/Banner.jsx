@@ -4,10 +4,10 @@ function Banner() {
   return (
     <div className="flex border-2 mx-20 mb-10 font-san font h-[500px] max-sm:w-full max-sm:flex-col-reverse max-sm:mx-auto max-sm:h-full max-lg:w-autp max-lg:mx-5 ">
       <section className="  bg-[#e9e9e9] pl-32 pr-10 pt-44 w-[600px] max-sm:w-auto max-sm:p-10  max-lg:w-auto max-lg:px-5">
-        <h1 className=" font-semibold text-3xl mb-5">
+        <h1 className=" font-semibold text-3xl mb-5 text-gray-800">
           Creative harmonious living
         </h1>
-        <p className="w-[350px] mb-5 text-[18px] ">
+        <p className="w-[350px] mb-5 text-[18px]  text-gray-500">
           RAOUF Products are all made to standard sizes so that you can mix and
           match them freely.
         </p>
