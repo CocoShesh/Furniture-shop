@@ -6,7 +6,7 @@ import Footer from "./sample_products/Footer/Footer";
 import NewsLetter from "./sample_products/NewsLetter/NewsLetter";
 import Products from "./sample_products/Product/Products";
 import ProductsSlider from "./sample_products/Slider/ProductsSlider";
-const Main = () => {
+const Bahay = () => {
   return (
     <>
       <Header />
@@ -20,4 +20,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default Bahay;

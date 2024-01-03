@@ -1,5 +1,5 @@
 import React from "react";
-import Main from "./components/main";
+import Bahay from "./components/Bahay";
 import Login from "./components/Login-user/ImageCarousel";
 import SignUp from "./components/Login-user/SIgnUp";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -15,7 +15,7 @@ function App() {
       <CartProvider>
         <ProductProvider>
           <Routes>
-            <Route path="/" element={<Main />} />
+            <Route path="/" element={<Bahay />} />
 
             <Route exact path="/product-page" element={<ProductPage />} />
             <Route
