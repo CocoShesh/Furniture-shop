@@ -1,0 +1,13 @@
+.ant-drawer-close {
+  position: absolute;
+  right: 0;
+  font-size: 30px !important;
+  top: 15px;
+}
+.ant-drawer-header {
+  border-bottom: none !important;
+  position: relative;
+}
+.ant-drawer-body {
+  margin-top: 8rem;
+}

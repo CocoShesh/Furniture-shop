@@ -1,0 +1,93 @@
+.main {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  height: auto;
+  gap: 20px;
+  grid-template-rows: repeat(2, 280px);
+  grid-template-areas: "live live skincare kitchen" "live live skincare electronics";
+}
+
+.first {
+  grid-area: live;
+  height: auto;
+  width: auto;
+}
+
+.second {
+  grid-area: skincare;
+}
+.third {
+  grid-area: kitchen;
+}
+.fourth {
+  grid-area: electronics;
+  height: 300px;
+}
+
+@media screen and (max-width: 640px) and (min-width: 320px) {
+  .main {
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(2, 300px);
+    height: auto;
+    grid-template-areas: "live skincare" "kitchen electronics";
+    margin-inline: 20px;
+  }
+  .first img {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+  }
+
+  .second img {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+  }
+  .third img {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+  }
+  .fourth img {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+  }
+}
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+  .main {
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "live  live live " "skincare kitchen electronics";
+    padding-inline: 20px;
+  }
+  .first img {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+  }
+
+  .second img {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+  }
+  .third img {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+  }
+  .fourth img {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+  }
+}
