@@ -70,17 +70,17 @@ function Product_Page() {
   };
 
   return (
-    <div className=" px-20 max-sm:mx-auto bg-white">
+    <div className=" px-20 max-sm:mx-auto  text-gray-900 ">
       {contextHolder}
       <h2 className="text-center text-5xl mb-10  text-gray-900">
         {product.name}
       </h2>
-      <div className=" border-2 ">
+      <div className=" border-2  ">
         <section className="flex max-sm:flex-col max-sm:w-full ">
           <section className=" w-[500px] ">
             <img src={product.imageSrc} alt={product.imageAlt} />
           </section>
-          <section className="bg-base-200 w-auto h-auto p-10 rounded-md">
+          <section className=" w-auto h-auto p-10 rounded-md bg-white">
             <h3 className="text-3xl font-bold">Description</h3>
             <p className="w-[700px] text-justify mt-2 border-2 p-3 max-sm:w-auto">
               {product.Description}
@@ -103,7 +103,7 @@ function Product_Page() {
                   type="text"
                   readOnly
                   value={quantity}
-                  className="w-[50px] h-[50px] border-[1px] text-3xl text-center bg-base-200 outline-none  border-black"
+                  className="w-[50px] h-[50px] border-[1px] text-3xl text-center bg-white outline-none  border-black"
                 />
                 <div
                   className="w-[50px] h-[50px] border-[1px] text-4xl text-center cursor-pointer bg-white border-black"
