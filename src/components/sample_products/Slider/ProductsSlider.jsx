@@ -61,18 +61,20 @@ export default function App() {
           {ProductImage1.map(img1 => (
             <SwiperSlide
               key={img1.id}
-              className="carousel-item border-[1px] border-[#cbcbcb] max-sm:h-[250px] max-sm:w-[100px]"
+              className="carousel-item border-[1px] border-[#cbcbcb] max-lg:h-auto max-w-auto max-md:h-auto "
             >
               <Link to={`/product-page/${img1.name}`}>
                 <img
                   src={img1.src}
-                  className="object-contain w-[100px] h-[300px]  max-sm:w-[150px] max-sm:h-[150px] bg-none"
+                  className="object-contain  h-auto   bg-none"
                   alt=""
                 />
-                <p className="ml-5 text-xl mt-2 max-sm:overflow-hidden">
+                <p className="ml-2 text-xl mt-2 max-sm:overflow-hidden max-md:text-xs">
                   {img1.name}
                 </p>
-                <p className="ml-5 mb-1 text-lg font-bold">{img1.price}</p>
+                <p className=" ml-2 mb-1 text-lg font-bold max-md:text-xs">
+                  {img1.price}
+                </p>
               </Link>
             </SwiperSlide>
           ))}
