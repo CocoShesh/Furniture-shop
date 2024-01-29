@@ -17,8 +17,8 @@ function Header() {
   return (
     <>
       <header>
-        <nav className=" flex justify-between items-center border-b-2 px-20 pb-2 fixed  text-gray-900 top-0 left-0 right-0 z-20  bg-white max-sm:w-full max-sm:px-5">
-          <section className="flex items-center justify-center gap-5 max-sm:w-auto">
+        <nav className=" flex justify-between items-center border-b-2 lg:px-20 pb-2 fixed  text-gray-900 top-0 left-0 right-0 z-20  bg-white max-sm:w-screen max-sm:px-5">
+          <section className="flex items-center justify-center gap-5 ">
             <Link to="/">
               <img src={logo} className="h-[60px]" alt="" />
             </Link>

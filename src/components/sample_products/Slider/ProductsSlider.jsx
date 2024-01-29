@@ -47,7 +47,7 @@ export default function App() {
           </button>
         </div>
       </section>
-      <div className="carousel-container rounded-box mx-20 max-sm:w-[700px] max-sm:mx-auto max-sm:px-5  text-gray-900">
+      <div className="carousel-container rounded-box mx-20 max-sm:w-auto max-sm:mx-auto max-sm:px-5  text-gray-900 ">
         <Swiper
           ref={swiperRef}
           effect={"slide"}
@@ -66,7 +66,7 @@ export default function App() {
               <Link to={`/product-page/${img1.name}`}>
                 <img
                   src={img1.src}
-                  className="object-contain w-[300px] h-[300px]  max-sm:w-[500px] max-sm:h-[150px]"
+                  className="object-contain w-[100px] h-[300px]  max-sm:w-[150px] max-sm:h-[150px]"
                   alt=""
                 />
                 <p className="ml-5 text-xl mt-2 max-sm:overflow-hidden">
