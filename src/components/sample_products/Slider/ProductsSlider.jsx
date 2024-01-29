@@ -27,7 +27,10 @@ export default function App() {
     <>
       <section className="flex justify-between w-full  mx-20 mb-5 items-center max-sm:w-full max-sm:mx-auto max-sm:px-5">
         <div>
-          <h1 className="text-2xl  text-gray-900"> Products we are proud of</h1>
+          <h1 className="text-2xl max-sm:text-xl  text-gray-900">
+            {" "}
+            Products we are proud of
+          </h1>
         </div>
         <div className="flex w-[280px]  py-2 gap-2 max-sm:w-auto">
           <button

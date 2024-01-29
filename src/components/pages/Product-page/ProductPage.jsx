@@ -70,23 +70,23 @@ function Product_Page() {
   };
 
   return (
-    <div className=" px-20 max-sm:mx-auto  text-gray-900 ">
+    <div className=" text-gray-900  ">
       {contextHolder}
-      <h2 className="text-center text-5xl mb-10  text-gray-900">
+      <h2 className="text-center text-5xl mb-10  text-gray-900 max-sm:text-4xl">
         {product.name}
       </h2>
-      <div className=" border-2  ">
-        <section className="flex max-sm:flex-col max-sm:w-full ">
-          <section className=" w-[500px] ">
-            <img src={product.imageSrc} alt={product.imageAlt} />
-          </section>
-          <section className=" w-auto h-auto p-10 rounded-md bg-white">
-            <h3 className="text-3xl font-bold">Description</h3>
-            <p className="w-[700px] text-justify mt-2 border-2 p-3 max-sm:w-auto">
-              {product.Description}
-            </p>
-            <Rating />
-            <section className="flex items-center gap-10 mt-10">
+      <div className="hero min-h-auto lg:px-10  border ">
+        <div className="hero-content flex-col lg:flex-row p-0 max-sm:max-w-xs">
+          <img
+            src={product.imageSrc}
+            alt={product.imageAlt}
+            className="max-w-xs rounded-lg "
+          />
+          <div className="max-sm:max-w-xs  max-lg:max-w-2xl max-sm:px-4">
+            <h1 className="text-5xl font-bold">Description</h1>
+            <p className="py-6 text-justify">{product.Description}</p>
+
+            <section className="flex max-sm:flex-col items-center gap-10 mt-10">
               <p className="font-bold text-2xl"> Quantity</p>
               <section className="flex">
                 <div
@@ -125,8 +125,8 @@ function Product_Page() {
                 Buy Now
               </button>
             </section>
-          </section>
-        </section>
+          </div>
+        </div>
       </div>
       <section>
         <ProductDescription />

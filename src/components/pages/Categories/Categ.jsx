@@ -15,7 +15,7 @@ const Categories = () => {
 
   return (
     <div className="mx-32 mb-20 pb-20 max-md:m-auto max-md:w-full max-lg:w-full max-lg:mx-auto max-lg:px-10 text-gray-900 ">
-      <div className="flex w-full max-md:w-auto max-md:ml-5">
+      <div className="flex w-full max-md:w-auto ">
         <p className="text-xl font-bold cursor-pointer">
           <a href="/">
             <span className="text-slate-500 mr-1 cursor-pointer">&lt; </span>{" "}
@@ -23,28 +23,27 @@ const Categories = () => {
           </a>
         </p>
       </div>
-      <h1 className="text-center font-sans text-2xl font-bold uppercase">
+      <h1 className="text-center font-sans text-2xl font-bold uppercase  max-md:mt-10">
         {" "}
-        {filter}{" "}
+        {/* {filter}{" "} */}
       </h1>
-      <section className="flex gap-3 items-center justify-center mt-10 max-md:mx-2   ">
-        <Segmented
-          options={[
-            "All",
-            "Furnitures",
-            "Electronics",
-            "Kitchen",
-            "Chairs",
-            "Lamps",
-            "Skin Care",
-          ]}
-          value={filter}
-          onChange={setFilter}
-          className=" text-xl font-sans font-semibold bg-red-300 max-md:w-autp max-md:flex max-md:items-center max-md:text-[10px]  max-md:px-3 max-md:py-2 max-md:rounded-full max-md:font-bold max-md:uppercase "
-        />
-      </section>
 
-      <section className="grid grid-cols-4 mt-20 gap-5 w-full max-md:grid-cols-2 max-md:w-full max-md:items-center max-md:justify-center  max-md:px-3 ">
+      <Segmented
+        options={[
+          "All",
+          "Furnitures",
+          "Electronics",
+          "Kitchen",
+          "Chairs",
+          "Lamps",
+          "Skin Care",
+        ]}
+        value={filter}
+        onChange={setFilter}
+        className=" text-xl font-sans font-semibold bg-red-300 max-md:w-auto max-md:flex max-md:items-center max-md:text-[18px]  max-md:pr-3 max-md:py-2 max-md:rounded-md max-md:font-bold max-md:uppercase overflow-scroll  max-md:h-12 hover:scale-110 "
+      />
+
+      <section className="grid grid-cols-4 mt-20 gap-5 w-full max-md:grid-cols-1 max-md:w-full max-md:items-center max-md:justify-center  max-md:px-3 ">
         {filteredProducts.map((product, index) => (
           <div
             key={index}

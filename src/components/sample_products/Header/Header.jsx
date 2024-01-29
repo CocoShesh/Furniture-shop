@@ -17,10 +17,10 @@ function Header() {
   return (
     <>
       <header>
-        <nav className=" flex justify-between items-center border-b-2 px-20 py-2 fixed  text-gray-900 top-0 left-0 right-0 z-20  bg-white max-sm:w-full max-sm:px-5">
+        <nav className=" flex justify-between items-center border-b-2 px-20 pb-2 fixed  text-gray-900 top-0 left-0 right-0 z-20  bg-white max-sm:w-full max-sm:px-5">
           <section className="flex items-center justify-center gap-5 max-sm:w-auto">
             <Link to="/">
-              <img src={logo} className="h-[90px]" alt="" />
+              <img src={logo} className="h-[60px]" alt="" />
             </Link>
             <Link
               to="/categories"
@@ -36,11 +36,11 @@ function Header() {
             </Link>
           </section>
           <section className="flex gap-5 items-center ">
-            <Link to="/login">
+            {/* <Link to="/login">
               <h3 className="font-sans text-[18px] font-bold cursor-pointer max-sm:hidden">
                 Login
               </h3>
-            </Link>
+            </Link> */}
 
             <AddToCart />
             <GiHamburgerMenu
@@ -66,11 +66,11 @@ function Header() {
           >
             Product Page
           </Link>
-          <Link to="/login">
+          {/* <Link to="/login">
             <h3 className="font-sans text-[25px] font-bold cursor-pointer">
               Login
             </h3>
-          </Link>
+          </Link> */}
         </section>
       </Drawer>
     </>

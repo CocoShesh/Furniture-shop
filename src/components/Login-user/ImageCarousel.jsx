@@ -1,5 +1,5 @@
 import React from "react";
-import SignUp from "./Login";
+// import SignUp from "./Login";
 import { Carousel } from "antd";
 
 const contentStyle = {
@@ -39,9 +39,7 @@ export default function App() {
             </div>
           </Carousel>
         </section>
-        <section className="w-[500px] ">
-          <SignUp />
-        </section>
+        <section className="w-[500px] ">{/* <SignUp /> */}</section>
       </section>
     </>
   );

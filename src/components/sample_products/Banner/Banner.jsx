@@ -7,7 +7,7 @@ function Banner() {
         <h1 className=" font-semibold text-3xl mb-5 text-gray-800">
           Creative harmonious living
         </h1>
-        <p className="w-[350px] mb-5 text-[18px]  text-gray-500">
+        <p className="lg:w-[350px] max-sm:max-w-xs mb-5 text-[18px]  text-gray-500">
           RAOUF Products are all made to standard sizes so that you can mix and
           match them freely.
         </p>

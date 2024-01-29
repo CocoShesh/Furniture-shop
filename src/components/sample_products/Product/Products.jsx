@@ -10,14 +10,14 @@ function Products() {
           Products we are proud of
         </h2>
 
-        <div className="mt-6 grid lg:grid-cols-4  max-lg:grid-cols-3  gap-x-6 gap-y-10 max-sm:grid-cols-2 max-md:grid-cols-3   xl:gap-x-8">
+        <div className="mt-6 grid lg:grid-cols-4  max-lg:grid-cols-3  gap-x-6 gap-y-10 max-sm:grid-cols-1 max-md:grid-cols-3   xl:gap-x-8">
           {limitedData.map(product => (
             <div key={product.id} className="group relative">
               <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md border-2 lg:aspect-none group-hover:opacity-75 lg:h-80">
                 <img
                   src={product.imageSrc}
                   alt={product.imageAlt}
-                  className="h-full w-full object-cover object-center lg:h-full lg:w-auto"
+                  className="h-full w-full object-cover object-center lg:h-full lg:w-auto "
                 />
               </div>
               <div className="mt-4 flex justify-between">

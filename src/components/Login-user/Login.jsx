@@ -10,14 +10,14 @@ const Login = () => {
           <span> &#10060;</span>
         </a>
       </Tooltip>
-      <div className="sm:mx-auto sm:w-full sm:max-w-sm">
+      <div className=" sm:w-full sm:max-w-sm">
         <h2 className=" text-4xl font-bold leading-9 tracking-tight text-gray-900">
           Login
         </h2>
         <p>Please Fill up the information below</p>
       </div>
 
-      <div className="mt-5 sm:mx-auto sm:w-full sm:max-w-sm">
+      <div className="mt-5 sm:mx-auto sm:w-full sm:max-w-none">
         <form className="space-y-6" action="#" method="POST">
           <div>
             <label

@@ -11,16 +11,16 @@ function ProductDescription() {
 
   return (
     <div>
-      <section className="flex justify-between mt-20 max-sm:flex-col max-sm:gap-5 max-sm:items-center  text-white ">
-        <section className="w-[380px] h-[100px] bg-base-200 p-5 rounded-md">
+      <section className="flex justify-between xl:mx-14 mt-20 max-lg:gap-5 max-lg:mx-5 max-sm:flex-col max-sm:gap-5 max-sm:items-center  text-white  ">
+        <section className="max-lg:w-[300px] xl:w-[350px] h-[100px] bg-base-200 p-5 rounded-md max-sm:max-w-xs  ">
           <h1 className="text-2xl font-bold font-sans "> Texture:</h1>
           <p className="font-sans text-lg"> {product.Texture}</p>
         </section>
-        <section className="w-[380px] h-[100px] bg-base-200  p-5 rounded-md">
+        <section className="max-lg:w-[300px] xl:w-[350px]  h-[100px] bg-base-200  p-5 rounded-md max-sm:max-w-xs ">
           <h1 className="text-2xl font-bold font-sans">Weight:</h1>
           <p className="font-sans text-lg"> {product.Weight} </p>
         </section>
-        <section className="w-[380px] h-[100px] bg-base-200  p-5 rounded-md">
+        <section className="max-lg:w-[300px] xl:w-[350px] h-[100px] bg-base-200  p-5 rounded-md max-sm:max-w-xs ">
           <h1 className="text-2xl font-bold font-sans"> Size:</h1>
           <p className="font-sans text-lg">{product.Size} </p>
         </section>
