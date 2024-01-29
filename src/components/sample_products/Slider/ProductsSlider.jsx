@@ -66,7 +66,7 @@ export default function App() {
               <Link to={`/product-page/${img1.name}`}>
                 <img
                   src={img1.src}
-                  className="object-contain w-[100px] h-[300px]  max-sm:w-[150px] max-sm:h-[150px]"
+                  className="object-contain w-[100px] h-[300px]  max-sm:w-[150px] max-sm:h-[150px] bg-none"
                   alt=""
                 />
                 <p className="ml-5 text-xl mt-2 max-sm:overflow-hidden">

@@ -29,12 +29,12 @@ const ProductImage1 = [
     name: "Body Oil 200ml",
     price: "$600",
   },
-  {
-    id: 6,
-    src: "/container.jpg",
-    name: "Container",
-    price: "$600",
-  },
+  // {
+  //   id: 6,
+  //   src: "/container.jpg",
+  //   name: "Container",
+  //   price: "$600",
+  // },
   {
     id: 7,
     src: "/cleanser.jpg",
@@ -56,12 +56,12 @@ const ProductImage2 = [
     name: "Body Oil 200ml",
     price: "$600",
   },
-  {
-    id: 2,
-    src: "/container.jpg",
-    name: "Container",
-    price: "$600",
-  },
+  // {
+  //   id: 2,
+  //   src: "/container.jpg",
+  //   name: "Container",
+  //   price: "$600",
+  // },
   {
     id: 3,
     src: "/cleanser.jpg",
