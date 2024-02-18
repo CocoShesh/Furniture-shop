@@ -28,7 +28,7 @@ const products = [
 export default function ImageGallery() {
   return (
     <>
-      <section className="main max-w-fit  mt-28 mx-auto max-xl:mx-3">
+      <section className="main max-w-fit pt-28  mx-auto max-xl:mx-3">
         <div className="first  ">
           <img
             src={products[0].src}
