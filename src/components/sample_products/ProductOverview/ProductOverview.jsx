@@ -28,33 +28,33 @@ const products = [
 export default function ImageGallery() {
   return (
     <>
-      <section className="main pt-32 mx-32 max-md:w-full  max-md:items-center max-md:mx-auto max-md:justify-center  max-lg:w-full max-lg:mx-auto ">
-        <div className="first">
+      <section className="main max-w-fit  mt-28 mx-auto max-xl:mx-3">
+        <div className="first  ">
           <img
             src={products[0].src}
             alt=""
-            className=" h-[600px] w-auto  rounded-lg    object-cover bg-black opacity-90 brightness-[.6] hover:brightness-[.5] transition duration-500 ease-in-out cursor-pointer"
+            className="  rounded-2xl   h-[530px]  object-cover bg-black opacity-90 brightness-[.6] hover:brightness-[.5] transition duration-500 ease-in-out cursor-pointer"
           />
         </div>
-        <div className="second">
+        <div className="second  ">
           <img
             src={products[3].src}
             alt=""
-            className="h-[601px] w-auto object-cover  rounded-lg brightness-[.6] hover:brightness-[.5] transition duration-500 ease-in-out cursor-pointer"
+            className="object-cover   w-full  h-[530px]   rounded-2xl brightness-[.6] hover:brightness-[.5] transition duration-500 ease-in-out cursor-pointer"
           />
         </div>
-        <div className="third">
+        <div className="third ">
           <img
             src={products[1].src}
             alt=""
-            className="  h-full w-auto object-cover   rounded-lg brightness-[.6] hover:brightness-[.5] transition duration-500 ease-in-out cursor-pointer"
+            className="   object-cover  w-full h-[260px]  rounded-2xl brightness-[.6] hover:brightness-[.5] transition duration-500 ease-in-out cursor-pointer"
           />
         </div>
-        <div className="fourth">
+        <div className="fourth ">
           <img
             src={products[2].src}
             alt=""
-            className=" h-full w-full object-cover   rounded-lg brightness-[.6] hover:brightness-[.5] transition duration-500 ease-in-out cursor-pointer"
+            className="  object-cover   w-full h-[260px]   rounded-2xl brightness-[.6] hover:brightness-[.5] transition duration-500 ease-in-out cursor-pointer"
           />
         </div>
       </section>
