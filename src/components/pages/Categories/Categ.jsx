@@ -28,22 +28,24 @@ const Categories = () => {
         {/* {filter}{" "} */}
       </h1>
 
-      <Segmented
-        options={[
-          "All",
-          "Furnitures",
-          "Electronics",
-          "Kitchen",
-          "Chairs",
-          "Lamps",
-          "Skin Care",
-        ]}
-        value={filter}
-        onChange={setFilter}
-        className=" text-xl font-sans font-semibold bg-red-300 max-md:w-auto max-md:flex max-md:items-center max-md:text-[18px]  max-md:pr-3 max-md:py-2 max-md:rounded-md max-md:font-bold max-md:uppercase overflow-scroll  max-md:h-12 hover:scale-110 "
-      />
+      <section className=" w-full mx-auto flex justify-center items-center">
+        <Segmented
+          options={[
+            "All",
+            "Furnitures",
+            "Electronics",
+            "Kitchen",
+            "Chairs",
+            "Lamps",
+            "Skin Care",
+          ]}
+          value={filter}
+          onChange={setFilter}
+          className=" text-xl font-sans font-semibold bg-red-300 max-md:w-auto max-md:flex max-md:items-center max-md:text-[18px]    max-md:pr-3 max-md:py-2 max-md:rounded-md max-md:font-bold max-md:uppercase overflow-scroll  max-md:h-12 hover:scale-110 "
+        />
+      </section>
 
-      <section className="grid grid-cols-4 mt-20 gap-5 w-full max-md:grid-cols-1 max-md:w-full max-md:items-center max-md:justify-center  max-md:px-3 ">
+      <section className="grid grid-cols-4 mt-20 gap-5 2xl:grid-cols-5   w-full max-md:grid-cols-1 max-md:w-full max-md:items-center max-md:justify-center  max-md:px-3 ">
         {filteredProducts.map((product, index) => (
           <div
             key={index}
@@ -52,7 +54,7 @@ const Categories = () => {
             <img
               src={product.src}
               alt={product.name}
-              className="h-[300px]    max-md:h-[300px] max-md:object-contain max-lg:object-contain"
+              className=" 2xl:w-full 2x   max-md:h-[300px] max-md:object-contain max-lg:object-contain"
             />
             <p className="mt-5  ">{product.name}</p>
             <p className="font-bold text-red-500 ">{product.price}</p>
