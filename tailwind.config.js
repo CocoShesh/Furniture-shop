@@ -6,6 +6,9 @@ export default {
       fontFamily: {
         sans: ["Blinker", "sans-serif"],
       },
+      screens: {
+        xs: "320px",
+      },
     },
   },
   plugins: [require("daisyui", "@tailwindcss/forms")],
